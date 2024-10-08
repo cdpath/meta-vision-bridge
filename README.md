@@ -30,7 +30,7 @@ prerequisite:
 - whatsapp account
 - Twilio account
 - VPS with public IP
-- Cloudflare (for caddy https)
+- Cloudflare (see also https://github.com/caddy-dns/cloudflare )
 
 
 references:
