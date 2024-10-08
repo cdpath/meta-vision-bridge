@@ -1,4 +1,4 @@
-# meta-vision-bridge
+meta-vision-bridge
 
 tldr:
 
@@ -31,3 +31,8 @@ prerequisite:
 - Twilio account
 - VPS with public IP
 - Cloudflare (for caddy https)
+
+
+references:
+
+- https://docs.dify.ai/zh-hans/learn-more/use-cases/dify-on-whatsapp
