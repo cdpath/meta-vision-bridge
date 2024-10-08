@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    networks:
+      - app
+
+  caddy:
+    image: mycaddy
+    build:
+      context: caddy
+      dockerfile: Dockerfile
+    ports:
+      - "443:443"
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./caddy/caddy_data:/data/caddy
+    depends_on:
+      - web
+    env_file:
+      - .env
+    networks:
+      - app
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  app:
+    driver: bridge

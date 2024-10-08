@@ -1,0 +1,9 @@
+*.{$BASE_DOMAIN} {
+
+  tls {
+     dns cloudflare {env.CLOUDFLARE_DNS_API_TOKEN}
+  }
+
+  reverse_proxy http://web:5000
+
+}
