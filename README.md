@@ -36,7 +36,7 @@ prerequisite:
 steps:
 
 1. register whatsapp account and connected to your meta view app
-2. register twilio and bind your whatsapp account from step1
+2. register twilio and bind your whatsapp account from step1: you may need to setup a name for twilio's whatsapp account, for example, myAI
 3. setup webhook service for twilio:
     1. `git clone git@github.com:cdpath/meta-vision-bridge.git`
     2. `cd meta-vision-bridge/webhook_svc`
@@ -50,8 +50,8 @@ usage:
 for text conversation
 
 ```
-Hey meta, send a message to ABC, {What is one plus one?}
-> send a message to ABC, ready to send?
+Hey meta, send a message to myAI, {What is one plus one?}
+> send a message to myAI, ready to send?
 Send
 
 > One plus one equals two.
@@ -60,12 +60,12 @@ Send
 for image conversation
 
 ```
-Hey meta, take a photo and send to ABC
-> send a photo to ABC, ready to send?
+Hey meta, take a photo and send to myAI
+> send a photo to myAI, ready to send?
 Send
 
-Hey meta, send a message to ABC, {Describe the photo}
-> send a message to ABC, ready to send?
+Hey meta, send a message to myAI, {Describe the photo}
+> send a message to myAI, ready to send?
 Send
 > {reply}
 ```
