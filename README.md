@@ -28,11 +28,11 @@ sequenceDiagram
 prerequisite:
 
 - whatsapp account
-- Twilio account
+- Twilio account [^1]
 - VPS with public IP
-- Cloudflare (see also https://github.com/caddy-dns/cloudflare )
+- Cloudflare [^2]
 
 
-references:
 
-- https://docs.dify.ai/zh-hans/learn-more/use-cases/dify-on-whatsapp
+[^1]: https://docs.dify.ai/zh-hans/learn-more/use-cases/dify-on-whatsapp
+[^2]: https://github.com/caddy-dns/cloudflare
